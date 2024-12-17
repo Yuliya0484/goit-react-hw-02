@@ -1,9 +1,9 @@
+import Description from "../Description/Description.jsx";
 import Options from "../Options/Options.jsx";
 import Feedback from "../Feedback/Feedback.jsx";
 import Notification from "../Notification/Notification.jsx";
 import { useState, useEffect } from "react";
 import s from "./App.module.css";
-import { SiCoffeescript } from "react-icons/si";
 
 const App = () => {
   const [feedback, setFeedback] = useState(() => {
@@ -33,19 +33,7 @@ const App = () => {
 
   return (
     <div className={s.container}>
-      <div className={s.title_box}>
-        <h1 className={s.title}>
-          Sip Happens Café
-          <span className={s.image}>
-            <SiCoffeescript />
-          </span>
-        </h1>
-
-        <p className={s.text}>
-          Please leave your feedback about our service by selecting one of the
-          options below.
-        </p>
-      </div>
+      <Description></Description>
       <Options
         options={["good", "neutral", "bad"]}
         onLeaveFeedback={updateFeedback}

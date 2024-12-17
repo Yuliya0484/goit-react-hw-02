@@ -1,0 +1,21 @@
+.button_box {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid gray;
+  width: fit-content;
+  border-radius: 16px;
+}
+.vote_button,
+.resetButton {
+  cursor: pointer;
+  border-radius: 16px;
+  padding: 16px;
+  border: 1px solid gray;
+  transition: all 0.5s;
+  text-shadow: 1px 1px 1px chocolate;
+  &:hover {
+    background-color: chocolate;
+    color: white;
+  }
+}

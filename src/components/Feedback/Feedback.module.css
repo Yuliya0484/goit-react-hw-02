@@ -1,0 +1,17 @@
+.feedback_box {
+  border: 1px solid gray;
+  border-radius: 16px;
+  margin-top: 12px;
+  margin-bottom: 24px;
+  padding: 16px;
+  width: fit-content;
+}
+.vote_list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.vote_item {
+  font-weight: 600;
+  font-style: italic;
+}
